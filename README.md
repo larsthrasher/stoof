@@ -1,3 +1,3 @@
-# Stoof
+# stoof
 
-MERN stack ft NextJs and Semantic UI!
+MERN stack e-commerce ft NextJs and Semantic UI!
