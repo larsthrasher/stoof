@@ -21,16 +21,16 @@ function Header({ user }) {
   }
 
   return (
-    <Menu stackable fluid id="menu" inverted>
+    <Menu stackable fluid inverted>
       <Container text>
         <Link href="/">
           <Menu.Item header active={isActive('/')}>
             <Image
               size="mini"
-              src="/static/logo.svg"
+              src="/static/stoof.png"
               style={{ marginRight: '1em' }}
             />
-            ReactReserve
+            Stoof
           </Menu.Item>
         </Link>
 
@@ -40,7 +40,7 @@ function Header({ user }) {
               name="cart"
               size="large"
             />
-            Cart
+            cart
           </Menu.Item>
         </Link>
 
@@ -51,7 +51,7 @@ function Header({ user }) {
                 name="add square"
                 size="large"
               />
-              Create
+              create
             </Menu.Item>
           </Link>
         )}
@@ -62,13 +62,13 @@ function Header({ user }) {
             <Link href="/account">
               <Menu.Item header active={isActive('/account')}>
                 <Icon name="user" size="large"/>
-                Account
+                account
               </Menu.Item>
             </Link>
 
             <Menu.Item onClick={handleLogout} header>
               <Icon name="sign out" size="large"/>
-                Logout
+                logout
             </Menu.Item>
         </>
         ):(
@@ -79,7 +79,7 @@ function Header({ user }) {
               name="sign in"
               size="large"
             />
-            Login
+            login
           </Menu.Item>
         </Link>
 
@@ -89,7 +89,7 @@ function Header({ user }) {
               name="signup"
               size="large"
             />
-            Signup
+            signup
           </Menu.Item>
         </Link>
         </>)}
